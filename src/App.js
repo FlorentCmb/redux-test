@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Librairies
+import React from 'react'
+import { connect } from 'react-redux'
+// Redux
+import {switchToFr, switchToEng } from './redux/actions/ActionsIndex'
+// Components
+import Translate from './features/translation/Translate'
+// Styles
+import './App.css'
 
-function App() {
+const App = (props) => {
+
+  const { switchToEng, switchToFr } = props
+  const { language } = props.translation
+
+  // Render
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div>
+        {language}
+        <button onClick={() => switchToEng()}>{Translate('English', language)}</button>
+        <button onClick={() => switchToFr()}>{Translate('French', language)}</button>
+      </div>
+  )
 }
 
-export default App;
+const mapStateToProps = state => ({
+  translation: state.translation
+})
+
+const mapDispatchToProps = dispatch => ({
+  switchToFr: () => dispatch(switchToFr()),
+  switchToEng: () => dispatch(switchToEng())
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App)
