@@ -1,11 +1,11 @@
 // Import librairies
 import { combineReducers } from 'redux'
 // Import all reducers
-import ReducerTranslation from './ReducerTranslation'
+import ReducerCounter from './ReducerCounter'
 
 // Combined reducers exported
 const mainReducer = combineReducers({
-    translation: ReducerTranslation
+    counter: ReducerCounter
 })
 
 export default mainReducer

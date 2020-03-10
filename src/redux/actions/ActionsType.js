@@ -1,3 +1,4 @@
-// Translation actions
-export const SWITCH_TO_FR = 'SWITCH_TO_FR'
-export const SWITCH_TO_ENG = 'SWITCH_TO_ENG'
+// Counter actions
+export const INCREMENT_COUNTER = 'INCREMENT_COUNTER'
+export const DECREMENT_COUNTER = 'DECREMENT_COUNTER'
+export const RESET_COUNTER = 'RESET_COUNTER'

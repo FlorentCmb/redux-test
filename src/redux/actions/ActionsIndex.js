@@ -1,1 +1,5 @@
-export { switchToFr, switchToEng } from './ActionsTranslation'
+export {
+    incrementCounter,
+    decrementCounter,
+    resetCounter,
+} from './ActionsCounter'
