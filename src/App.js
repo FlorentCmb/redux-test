@@ -2,7 +2,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 // Redux
-import {switchToFr, switchToEng } from '.redux/actions/ActionsIndex'
+import {switchToFr, switchToEng } from './redux/actions/ActionsIndex'
 // Components
 import Translate from './features/translation/Translate'
 // Styles
