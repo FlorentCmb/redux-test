@@ -2,8 +2,9 @@ import translationToFr from './translationToFr.json'
 
 const Translate = (text, language) => {
     switch (language) {
-        case 'fr':
+        case 'French':
             return translationToFr[text]
+        case 'English':
         default:
             return text
     }

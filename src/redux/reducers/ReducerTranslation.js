@@ -6,7 +6,7 @@ import {
 
 // Initial state
 const initialState = {
-    language: 'eng'
+    language: 'English'
 }
 
 // Reducer for translation
@@ -15,12 +15,12 @@ const ReducerTranslation = (state = initialState, action) => {
         case SWITCH_TO_FR:
             return {
                 ...state,
-                language: 'fr'
+                language: 'French'
             }
         case SWITCH_TO_ENG:
             return {
                 ...state,
-                language: 'eng'
+                language: 'English'
             }
         default:
             return state
