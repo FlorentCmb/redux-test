@@ -3,7 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 // Redux
-import store from './setup/StoreCreator'
+import store from './redux/StoreCreator'
 // Components
 import App from './App'
 // Styles
