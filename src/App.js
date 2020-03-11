@@ -10,6 +10,7 @@ import {
   switchToLightTheme
 } from './redux/actions/ActionsIndex'
 // Components
+import Button from './components/Button'
 // Styles
 import './App.css'
 
@@ -49,9 +50,10 @@ const App = (props) => {
       <button onClick={() => uploadCounterValue(counter.value)}>Upload</button>
 
       <p>Current theme is : {theme.color}</p>
-      <button onClick={() => switchToDarkTheme()}>Dark</button>
-      <button onClick={() => switchToLightTheme()}>Light</button>
-      <button onClick={() => saveTheme(theme.color)}>Save theme</button>
+      <Button click={() => switchToLightTheme()} color={theme.color} text="Light" />
+      <Button click={() => switchToDarkTheme()} color={theme.color} text="Dark" />
+      <Button click={() => saveTheme(theme.color)} color={theme.color} text="Save theme" />
+
     </div>
   )
 }

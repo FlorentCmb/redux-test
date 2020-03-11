@@ -1,0 +1,15 @@
+.Button {
+    padding: .5% 1%;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.Button-dark {
+    border: 2px solid white;
+    color: white
+}
+
+.Button-light {
+    border: 2px solid black;
+    color: black;
+}
