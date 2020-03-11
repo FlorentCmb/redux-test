@@ -6,7 +6,9 @@ import {
 } from '../actions/ActionsType'
 
 // Initial state
-const initialState = JSON.parse(localStorage.getItem('value')) || { value: 5 }
+const initialState = {
+    value: JSON.parse(localStorage.getItem('counterValue')) || 5
+}
 
 // Reducer for translation
 const ReducerCounter = (state = initialState, action) => {
