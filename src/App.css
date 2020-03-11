@@ -2,3 +2,11 @@
   margin: 0;
   padding: 0;
 }
+.App-dark {
+  background: rgb(42, 34, 34);
+  color: lightgrey;
+}
+
+.App-light {
+  background: rgba(240, 240, 240, 1);
+}
