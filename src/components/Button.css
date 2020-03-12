@@ -5,11 +5,11 @@
 }
 
 .Button-dark {
-    border: 2px solid white;
-    color: white
+    border: 2px solid rgba(240, 240, 240, 1);
+    color: rgba(240, 240, 240, 1);
 }
 
 .Button-light {
-    border: 2px solid black;
-    color: black;
+    border: 2px solid rgba(42, 34, 34, 1);
+    color: rgba(42, 34, 34, 1);
 }
