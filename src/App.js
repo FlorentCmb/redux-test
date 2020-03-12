@@ -47,11 +47,6 @@ const App = (props) => {
       <p>Current theme is : {theme.color}</p>
       <Button click={() => switchToLightTheme()} color={theme.color} text="Light" />
       <Button click={() => switchToDarkTheme()} color={theme.color} text="Dark" />
-
-      <select>
-        
-      </select>
-
     </div>
   )
 }
