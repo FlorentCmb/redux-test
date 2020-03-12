@@ -14,12 +14,6 @@ import Button from './components/Button'
 // Styles
 import './App.css'
 
-// Functions
-const uploadCounterValue = (value) => {
-  localStorage.setItem('counterValue', JSON.stringify(value))
-  console.log('Updated value : ', value)
-}
-
 // Render
 const App = (props) => {
 
