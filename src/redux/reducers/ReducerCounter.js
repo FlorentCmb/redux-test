@@ -14,16 +14,19 @@ const initialState = {
 const ReducerCounter = (state = initialState, action) => {
     switch (action.type) {
         case INCREMENT_COUNTER:
+            localStorage.setItem('counterValue', JSON.stringify(state.value + 1))
             return ({
                 ...state,
                 value: state.value + 1
             })
         case DECREMENT_COUNTER:
+            localStorage.setItem('counterValue', JSON.stringify(state.value - 1))
             return ({
                 ...state,
                 value: state.value - 1
             })
         case RESET_COUNTER:
+            localStorage.setItem('counterValue', JSON.stringify(0))
             return ({
                 ...state,
                 value: 0
