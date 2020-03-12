@@ -20,11 +20,6 @@ const uploadCounterValue = (value) => {
   console.log('Updated value : ', value)
 }
 
-const saveTheme = (color) => {
-  localStorage.setItem('themeColor', JSON.stringify(color))
-  console.log('Updated color : ', color)
-}
-
 // Render
 const App = (props) => {
 
@@ -52,7 +47,10 @@ const App = (props) => {
       <p>Current theme is : {theme.color}</p>
       <Button click={() => switchToLightTheme()} color={theme.color} text="Light" />
       <Button click={() => switchToDarkTheme()} color={theme.color} text="Dark" />
-      <Button click={() => saveTheme(theme.color)} color={theme.color} text="Save theme" />
+
+      <select>
+        
+      </select>
 
     </div>
   )

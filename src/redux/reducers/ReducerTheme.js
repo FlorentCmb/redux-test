@@ -13,11 +13,13 @@ const initialState = {
 const ReducerTheme = (state = initialState, action) => {
     switch (action.type) {
         case SWITCH_TO_DARK_THEME:
+            localStorage.setItem('themeColor', JSON.stringify('dark'))
             return ({
                 ...state,
                 color: 'dark'
             })
         case SWITCH_TO_LIGHT_THEME:
+            localStorage.setItem('themeColor', JSON.stringify('light'))
             return ({
                 ...state,
                 color: 'light'
