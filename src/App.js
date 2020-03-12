@@ -37,12 +37,11 @@ const App = (props) => {
   return (
     <div className={`App App-${theme.color}`}>
       <div>
-        <button onClick={() => decrementCounter()}>-1</button>
+        <Button click={() => decrementCounter()} color={theme.color} text="-1" />
         <input type='text' disabled value={counter.value} />
-        <button onClick={() => incrementCounter()}>+1</button>
+        <Button click={() => incrementCounter()} color={theme.color} text="+1" />
       </div>
-      <button onClick={() => resetCounter()}>Reset</button>
-      <button onClick={() => uploadCounterValue(counter.value)}>Upload</button>
+      <Button click={() => resetCounter()} color={theme.color} text="Reset Counter" />
 
       <p>Current theme is : {theme.color}</p>
       <Button click={() => switchToLightTheme()} color={theme.color} text="Light" />
